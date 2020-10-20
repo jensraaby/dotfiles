@@ -1,13 +1,35 @@
 source ~/.zplug/init.zsh
 
 
-# Make sure to use double quotes
-zplug "zsh-users/zsh-history-substring-search"
+zplug "modules/autosuggestions", from:prezto, as:plugin
+zplug "modules/history-substring-search", from:prezto, as:plugin
+zstyle ':prezto:module:autosuggestions' color 'yes'
+zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
+# zplug "zsh-users/zsh-history-substring-search", as:plugin
 
-# Theme stuff
+zplug "modules/homebrew", from:prezto, as:plugin
 zplug romkatv/powerlevel10k, as:theme, depth:1
+zplug "djui/alias-tips", as:plugin
+zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/direnv", from:oh-my-zsh
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/fzf", from:oh-my-zsh
+zplug "plugins/gcloud", from:oh-my-zsh
+
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
 
 zplug load # --verbose
+
+export EDITOR='vim'
+
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -18,3 +40,11 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
