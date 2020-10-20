@@ -11,6 +11,18 @@
         "options": {
           "full_name": "github"
         }
+      },
+      "1password": {
+        "version": "7.6",
+        "options": {
+          "full_name": "1Password"
+        }
+      },
+      "spotify": {
+        "version": "latest",
+        "options": {
+          "full_name": "Spotify"
+        }
       }
     },
     "brew": {

@@ -2,6 +2,8 @@
 tap "homebrew/cask"
 
 cask "github"
+cask "1Password"
+cask "Spotify"
 brew "fzf"
 
 brew "sbt"
