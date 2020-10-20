@@ -2,10 +2,10 @@ source ~/.zplug/init.zsh
 
 
 zplug "modules/autosuggestions", from:prezto, as:plugin
-zplug "modules/history-substring-search", from:prezto, as:plugin
-zstyle ':prezto:module:autosuggestions' color 'yes'
-zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
-# zplug "zsh-users/zsh-history-substring-search", as:plugin
+zplug "plugins/history-substring-search",   from:oh-my-zsh
+zplug "plugins/zsh-syntax-highlighting",   from:oh-my-zsh
+
+
 
 zplug "modules/homebrew", from:prezto, as:plugin
 zplug romkatv/powerlevel10k, as:theme, depth:1
