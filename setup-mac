@@ -13,3 +13,13 @@ ln -sf ${DOTFILES_DIR}/git/gitconfig ~/.gitconfig
 ln -sf ${DOTFILES_DIR}/git/gitignore ~/.gitignore
 
 
+echo "... brew"
+
+[[ ! -f /usr/local/bin/brew ]] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew bundle
+
+echo "... jvm"
+[[ ! -d $HOME/.sdkman ]] && curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk update
+
