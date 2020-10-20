@@ -1,0 +1,65 @@
+[user]
+  name = Jens Raaby
+  email = jensraaby@users.noreply.github.com
+
+[color]
+  ui = true
+
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore
+  pager = less -x2
+
+[push]
+  default = current
+
+[pull]
+  rebase = true
+
+[rebase]
+  autoStash = true
+
+[merge]
+  conflictstyle = diff3
+
+[http]
+  sslverify = true
+
+[github]
+  user = jensraaby
+
+[alias]
+  la = "!git config -l | grep alias | cut -c 7-"
+
+  co = checkout
+  br = branch
+
+  # most from https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  le = log --oneline --decorate
+
+  dl = "!git ll -1"
+  dlc = diff --cached HEAD^
+
+  f = "!git ls-files | grep -i"
+  grep = grep -Ii
+  gr = grep -Ii
+ 
+  lasttag = describe --tags --abbrev=0
+  lt = describe --tags --abbrev=0
+
+  diff = diff --word-diff
+
+  # From jon t
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[branch "master"]
+  mergeoptons = --no-ff
+
+[help]
+  autocorrect = 1
+

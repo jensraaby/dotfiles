@@ -8,4 +8,8 @@ echo "Configuring ZSH  ..."
 setopt EXTENDED_GLOB
 for rcfile in zshrc zshenv ; do ln -sf ${DOTFILES_DIR}/zsh/${rcfile} ~/.${rcfile} ; done
 
+echo "... git"
+ln -sf ${DOTFILES_DIR}/git/gitconfig ~/.gitconfig
+ln -sf ${DOTFILES_DIR}/git/gitignore ~/.gitignore
+
 
