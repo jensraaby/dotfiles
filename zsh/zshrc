@@ -6,8 +6,8 @@ zplug "plugins/history-substring-search",   from:oh-my-zsh
 zplug "plugins/zsh-syntax-highlighting",   from:oh-my-zsh
 
 
-
 zplug "modules/homebrew", from:prezto, as:plugin
+zplug "modules/directory", from:prezto, as:plugin
 zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug "djui/alias-tips", as:plugin
 zplug "plugins/git",   from:oh-my-zsh
