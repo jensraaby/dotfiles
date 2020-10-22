@@ -10,6 +10,7 @@ cask "google-cloud-sdk"
 cask "visual-studio-code"
 cask "iterm2"
 cask "firefox-developer-edition"
+cask "rectangle"
 
 brew "sbt"
 brew "yarn"

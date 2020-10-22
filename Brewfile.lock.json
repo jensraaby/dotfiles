@@ -50,6 +50,12 @@
         "options": {
           "full_name": "firefox-developer-edition"
         }
+      },
+      "rectangle": {
+        "version": "0.36",
+        "options": {
+          "full_name": "rectangle"
+        }
       }
     },
     "brew": {
