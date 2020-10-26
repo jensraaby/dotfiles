@@ -11,6 +11,10 @@ cask "visual-studio-code"
 cask "iterm2"
 cask "firefox-developer-edition"
 cask "rectangle"
+cask "postman"
+
+brew "kubectx"
+brew "minikube"
 
 brew "sbt"
 brew "yarn"
