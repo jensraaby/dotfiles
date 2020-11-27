@@ -1,10 +1,8 @@
 source ~/.zplug/init.zsh
 
-
 zplug "modules/autosuggestions", from:prezto, as:plugin
 zplug "plugins/history-substring-search",   from:oh-my-zsh
 zplug "plugins/zsh-syntax-highlighting",   from:oh-my-zsh
-
 
 zplug "modules/homebrew", from:prezto, as:plugin
 zplug "modules/directory", from:prezto, as:plugin
@@ -15,6 +13,7 @@ zplug "plugins/direnv", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "plugins/fzf", from:oh-my-zsh
 zplug "plugins/gcloud", from:oh-my-zsh
+zplug "plugins/kubectl", from:oh-my-zsh
 
 
 # Install plugins if there are plugins that have not been installed
