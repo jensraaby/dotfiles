@@ -1,6 +1,7 @@
 
 alias gfa='git fetch --all --prune'
 alias gst='git status'
+alias gtrim="git fetch --all -p; git branch -vv | grep ": gone]" | awk '{ print $1 }' | xargs -n 1 git branch -D"
 
 export CLOUDSDK_PYTHON=python2
 
