@@ -1,0 +1,24 @@
+tap "warrensbox/tap"
+brew "tfswitch"
+brew "thefuck"
+
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+
+cask "github"
+cask "google-cloud-sdk"
+cask "visual-studio-code"
+cask "firefox-developer-edition"
+cask "postman"
+
+brew "kubectx"
+brew "minikube"
+brew "stern"
+
+brew "ammonite-repl"
+brew "sbt"
+
+brew "yarn"
+brew "node"
+
+
