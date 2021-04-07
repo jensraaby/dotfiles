@@ -17,8 +17,13 @@ brew "stern"
 
 brew "ammonite-repl"
 brew "sbt"
+tap "coursier/formulas"
+brew "coursier"
 
 brew "yarn"
 brew "node"
 
-
+#brew "gpg"
+brew "gpg2"
+brew "gnupg"
+brew "pinentry-mac"
