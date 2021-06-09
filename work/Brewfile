@@ -16,7 +16,6 @@ brew "minikube"
 brew "stern"
 
 brew "ammonite-repl"
-brew "sbt"
 tap "coursier/formulas"
 brew "coursier"
 
