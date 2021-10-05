@@ -26,3 +26,9 @@ brew "node"
 brew "gpg2"
 brew "gnupg"
 brew "pinentry-mac"
+
+brew "vegeta"
+brew "wrk"
+
+cask "tla-plus-toolbox"
+brew "wiremock-standalone"
