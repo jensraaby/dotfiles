@@ -1,8 +1,10 @@
 **/*~
 **/#*
 **/.#*
-~/.DS_Store
+.DS_Store
 *.swp
 
 target/
 
+.metals/
+.vscode/
